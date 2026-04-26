@@ -182,8 +182,9 @@ h3 {
 }
 
 .altro {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: transparent;
+    height: 20px;
+    font-size: 15px;
 }
 
 .grid {

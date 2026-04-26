@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Esercitazione: dei sepolcri</h1>
+
+        <div class="block">
+            <div class="student-info">
+                <div><strong>Studente: </strong><input type="text" style="width: 200px;"></div>
+                <div><strong>Classe: </strong><input type="text" style="width: 50px; padding-right: 10px;"> <strong>Data: </strong><input type="text" style="width: 80px;"></div>
+            </div>
+        </div>
+
+        <div class="block">
+            <h2 style="border-color: #e67e22;">1. ANALISI E PARAFRASI</h2>
+            <div class="section" style="border-color: #e67e22;">
+                <p><em>Inserisci qui la parafrasi (il carme in prosa) della sezione assegnata</em></p>
+                <textarea></textarea>
+            </div>
+        </div>
+
+        <div class="block">
+            <h2 style="border-color: #8e44ad;">2. INTERPRETAZIONE VISIVA (CANVA/AI)</h2>
+            <div class="section" style="border-color: #8e44ad;">
+                <p><em>Incolla qui l'immagine generata o descrivi il prompt utilizzato:</em></p>
+                <div id="drop-area">
+                    Trascina un'immagine qui oppure clicca per selezionarla dalla galleria
+                </div>
+                <input class="drag-btn" type="file" id="fileElem" accept="image/*">
+                <h3>Promt utilizzato:</h3>
+                <textarea placeholder="Descrivi il prompt utilizzato per generare l'immagine..."></textarea>
+            </div>
+        </div>
+            
+
+        <div class="block">
+            <h2 style="border-color: #c0392b;">3. FIGURE RETORICHE</h2>
+            <div class="section" style="border-color: #c0392b;">
+                <p><em>Seleziona le figure retoriche presenti nel brano:</em></p>
+                <div class="grid">
+                    <label class="grid-item"><input type="checkbox"> Allitterazione</label>
+                    <label class="grid-item"><input type="checkbox"> Anastrofe</label>
+                    <label class="grid-item"><input type="checkbox"> Iperbato</label>
+                    <label class="grid-item"><input type="checkbox"> Enjambement</label>
+                    <label class="grid-item"><input type="checkbox"> Chiasmo</label>
+                    <label class="grid-item"><input type="checkbox"> Metafora</label>
+                    <label class="grid-item"><input type="checkbox"> Metonimia</label>
+                    <label class="grid-item"><input type="checkbox"> Sineddoche</label>
+                    <label class="grid-item"><input type="checkbox"> Personificazione</label>
+                    <label class="grid-item"><input type="checkbox"> Apostrofe</label>
+                    <label class="grid-item"><input type="checkbox"> Sinestesia</label>
+                    <label class="grid-item">
+                        <input type="checkbox">
+                        <input class="altro" type="text" placeholder="Altro">
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="block">
+            <h2 style="border-color: #2980b9;">4. NUCLEI CONCETTUALI E TEMI</h2>
+            <div class="section" style="border-color: #2980b9;">
+                <p><em>Seleziona le opzioni presenti nel brano assegnato:</em></p>
+                <div class="grid">
+                    <label class="grid-item"><input type="checkbox"> 1. Negazione del valore delle tombe</label>
+                    <label class="grid-item"><input type="checkbox"> 2. Memoria garantita dalle tombe</label>
+                    <label class="grid-item"><input type="checkbox"> 3. Valore nullo per chi non lascia ricordo</label>
+                    <label class="grid-item"><input type="checkbox"> 4. Culto funerario come civiltà</label>
+                    <label class="grid-item"><input type="checkbox"> 5. Esempio negativo del medioevo</label>
+                    <label class="grid-item"><input type="checkbox"> 6. Esempio positivo antichità classica</label>
+                    <label class="grid-item"><input type="checkbox"> 7. Esempio positivo cimiteri inglesi</label>
+                    <label class="grid-item"><input type="checkbox"> 8. Tombe dei grandi come esempio</label>
+                    <label class="grid-item"><input type="checkbox"> 9. Tombe di Santa Croce (FI)</label>
+                    <label class="grid-item"><input type="checkbox"> 10. Ruolo eternatore della poesia</label>
+                </div>
+            </div>
+        </div>
+            
+            <script src="script.js"></script>
+          
+        <div class="btn-print" onclick="window.print()">
+            Stampa / Salva in PDF
+        </div>
+
+    </div>
+        
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.save-btn {
+    display: block;
+    width: 280;
+    margin: 20px auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.title {
+    color: #2c3e50;
+    text-align: center;
+    border-bottom: 3px solid #2c3e50;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+.btns-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-size: 10px;
+    color: #2c3e50;
+}
+
+input {
+    border: 0;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    border-left: 5px solid;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.seconda-prosa {
+    padding: 20px 20px 20px 20px;
+    display: grid;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #e67e22;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.terza-prosa {
+    padding: 20px 20px 20px 20px;
+    display: grid;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #8e44ad;
+}
+
+#drop-area {
+    width: 300px;
+    height: 300px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    color: #888;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#drop-area.hover {
+    border-color: red;
+    color: red;
+}
+
+#drop-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.drag-btn {
+    display: none;
+}
+
+.quarta-prosa {
+    padding: 20px 20px 20px 20px;
+    display: grid;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #c0392b;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #fafafa;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.altro {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+}
+
+.quinta-prosa {
+    padding: 20px 20px 20px 20px;
+    display: grid;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #2980b9;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

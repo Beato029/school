@@ -1,0 +1,215 @@
+:root {
+    --primary: #2c3e50;
+    --accent-prosa: #e67e22;
+    --accent-visual: #8e44ad;
+    --accent-rhetoric: #c0392b;
+    --accent-themes: #2980b9;
+    --bg: #f4f7f6;
+    --white: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary);
+    color: #2c3e50;
+    border-bottom: 3px solid #2c3e50;
+    padding-bottom: 10px;
+}
+
+.btn-print {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.student-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+
+strong {
+    color: #2c3e50;
+}
+
+input {
+    border: none;
+    /* font-size: 15px; */
+}
+
+h2 {
+    border-left: 5px solid;
+    padding-left: 15px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.section {
+    margin-top: 10px;
+    padding: 20px;
+    /* padding: 20px 20px 20px 20px; */
+    display: grid;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid gray;
+    min-height: 250px;
+    /* font-family: Arial, sans-serif; */
+    padding: 10px 10px 10px 10px;
+}
+
+#drop-area {
+    width: 300px;
+    height: 300px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    color: #888;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#drop-area:hover {
+    border-color: blue;
+    color: blue;
+}
+
+#drop-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.drag-btn {
+    display: none;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #fafafa;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.altro {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+}
+
+.quinta-prosa {
+    padding: 20px 20px 20px 20px;
+    display: grid;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #2980b9;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+    /* h2 {
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+
+    h2:first-child {
+        margin-top: 20px;
+    } */
+
+    .section {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    /* opzionale ma molto utile */
+    h2 + .section {
+        page-break-before: avoid;
+        break-before: avoid;
+    }
+
+    .block {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .btn-print {
+        display: none;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .body {
+        margin: 0;
+    }
+
+}
+
+@page {
+    margin: 0;
+}
+
+ /* h2 {
+        break-after: avoid;
+    }
+
+    h2:first-child {
+        margin-top: 20px;
+    } */

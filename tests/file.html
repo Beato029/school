@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercitazione: I Sepolcri - Ugo Foscolo</title>
+
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent-prosa: #e67e22;
+            --accent-visual: #8e44ad;
+            --accent-rhetoric: #c0392b;
+            --accent-themes: #2980b9;
+            --bg: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: var(--bg);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary);
+        }
+
+        .btn-print {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .student-info {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        h2 {
+            border-left: 5px solid var(--primary);
+            padding-left: 10px;
+            margin-top: 40px;
+        }
+
+        .section {
+            margin-top: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 10px;
+        }
+
+        .grid-item {
+            background: #fafafa;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        @media print {
+            .btn-print { display: none; }
+            body { background: white; }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="btn-print" onclick="window.print()">
+        Stampa / Salva in PDF
+    </div>
+
+    <h1>Esercitazione: Dei Sepolcri</h1>
+
+    <div class="student-info">
+        <div><strong>Studente:</strong> ____________</div>
+        <div><strong>Classe:</strong> ____ | <strong>Data:</strong> ____</div>
+    </div>
+
+    <h2>1. Analisi e Parafrasi</h2>
+    <div class="section">
+        <p><em>Inserisci la parafrasi:</em></p>
+        <textarea></textarea>
+    </div>
+
+    <h2>2. Interpretazione Visiva</h2>
+    <div class="section">
+        <p><em>Immagine o prompt:</em></p>
+        <div style="height:300px;border:2px dashed #ccc;display:flex;align-items:center;justify-content:center;">
+            Spazio immagine
+        </div>
+
+        <p><strong>Prompt:</strong></p>
+        <textarea></textarea>
+    </div>
+
+    <h2>3. Figure Retoriche</h2>
+    <div class="section">
+        <div class="grid">
+            <label class="grid-item"><input type="checkbox">Allitterazione</label>
+            <label class="grid-item"><input type="checkbox">Anastrofe</label>
+            <label class="grid-item"><input type="checkbox">Iperbato</label>
+            <label class="grid-item"><input type="checkbox">Enjambement</label>
+            <label class="grid-item"><input type="checkbox">Metafora</label>
+            <label class="grid-item"><input type="checkbox">Chiasmo</label>
+            <label class="grid-item"><input type="checkbox">Personificazione</label>
+            <label class="grid-item"><input type="checkbox">Sinestesia</label>
+        </div>
+    </div>
+
+    <h2>4. Temi</h2>
+    <div class="section">
+        <div class="grid">
+            <label class="grid-item"><input type="checkbox">Memoria e tombe</label>
+            <label class="grid-item"><input type="checkbox">Valore della poesia</label>
+            <label class="grid-item"><input type="checkbox">Esempi storici</label>
+            <label class="grid-item"><input type="checkbox">Civiltà classica</label>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

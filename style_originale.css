@@ -17,12 +17,10 @@ body {
 
 .container {
     max-width: 900px;
-    width: 100%;
     margin: auto;
     background: white;
-    padding: 20px;
+    padding: 40px;
     border-radius: 8px;
-    box-sizing: border-box;
 }
 
 h1 {
@@ -39,26 +37,6 @@ h1 {
     margin: 20px auto;
     padding: 10px;
     background: var(--primary);
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.img-btns {
-    display: flex;
-    margin: 20px 0 0 0;
-    justify-content: center;
-    gap: 10px;
-}
-
-#deleteBtn,
-#rotateBtn,
-#grayscaleeBtn,
-#blurBtn {
-    width: 120px;
-    padding: 5px;
-    background: var(--primary);    
     color: white;
     text-align: center;
     border-radius: 5px;
@@ -101,14 +79,11 @@ textarea {
     border: 1px solid gray;
     min-height: 250px;
     padding: 10px 10px 10px 10px;
-    /* font-size: 20px; */
 }
 
 #drop-area {
-    width: 100%;
-    max-width: 300px;
-    aspect-ratio: 1 / 1;
-    height: auto;
+    width: 300px;
+    height: 300px;
     border: 2px dashed #ccc;
     border-radius: 10px;
     display: flex;
@@ -163,23 +138,15 @@ h3 {
     gap: 10px;
 }
 
+/* @media (max-width: 800px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
 @media (max-width: 500px) {
     .grid {
         grid-template-columns: 1fr;
-    }
-
-    .student-info {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .img-btns {
-        /* flex-direction: column;
-        gap: 10px;
-        justify-self: center; */
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
     }
 }
 
@@ -209,13 +176,6 @@ h3 {
 
     .body {
         margin: 0;
-    }
-
-    #deleteBtn,
-    #rotateBtn,
-    #grayscaleeBtn,
-    #blurBtn {
-        display: none;
     }
 
 }

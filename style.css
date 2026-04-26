@@ -8,17 +8,46 @@
     --white: #ffffff;
 }
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: var(--bg);
     margin: 0;
-    padding: 20px;
+    padding: 0;
+}
+
+.foscolo {
+    width: 100%;
+    height: 320px; 
+    background-image: url("foscolo.jpeg");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+span {
+    color: white;
+    font-size: 100px;
+    font-weight: 200;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 2px;
 }
 
 .container {
     max-width: 900px;
     width: 100%;
-    margin: auto;
+    margin: 30px auto 0 auto;
     background: white;
     padding: 20px;
     border-radius: 8px;
@@ -181,6 +210,16 @@ h3 {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
+
+    span {
+        color: white;
+        font-size: 40px;
+        /* font-weight: 200; */
+        text-align: center;
+        font-family: "Roboto Condensed", sans-serif;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
 }
 
 @media print {
@@ -214,7 +253,8 @@ h3 {
     #deleteBtn,
     #rotateBtn,
     #grayscaleeBtn,
-    #blurBtn {
+    #blurBtn,
+    .foscolo {
         display: none;
     }
 

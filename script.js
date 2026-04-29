@@ -7,6 +7,17 @@ document.addEventListener("DOMContentLoaded", () => {
     let isGrayscale = false;
     let isBlurred = false;
 
+    // ✅ AUTO-RESIZE TEXTAREA (AGGIUNTO QUI)
+    document.querySelectorAll("textarea").forEach(textarea => {
+        textarea.addEventListener("input", function () {
+            this.style.height = "auto";
+            this.style.height = this.scrollHeight + "px";
+        });
+
+        // per adattare anche eventuale testo già presente
+        textarea.style.height = textarea.scrollHeight + "px";
+    });
+
     // CLICK per aprire file
     dropArea.addEventListener("click", () => fileInput.click());
 
